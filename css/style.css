@@ -1,67 +1,94 @@
 body {
-    background: transparent linear-gradient(64deg, #C6D2B9 0%, #7EB78F 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(64deg, #C6D2B9 0%, #7EB78F 100%) 0% 0% repeat-x padding-box;
 }
+
 .w3-content {
     margin-bottom: 75px;
     max-width: 850px!important;
 }
+
 .mySlides {
-  display:none;
+    display: none;
 }
-.sliders{
-  width: 100%!important;
-  height: 300px!important;
-  border-radius: 20px!important;
-  border: 1px solid!important;
+
+.sliders {
+    width: 100%!important;
+    height: 300px!important;
+    border-radius: 20px!important;
+    border: 1px solid!important;
 }
-.news{
-  text-align: center!important;
-  margin-top: 120px!important;
+
+.news {
+    text-align: center!important;
+    margin-top: 120px!important;
 }
 
 @keyframes slide {
-    0% { transform: translateX(0); }
-    10% { transform: translateX(0); }
- 
-    15% { transform: translateX(-100%); }
-    30% { transform: translateX(-100%); }
- 
-    35% { transform: translateX(-200%); }
-    50% { transform: translateX(-200%); }           
- 
-    55% { transform: translateX(-300%); }
-    70% { transform: translateX(-300%); }
- 
-    75% { transform: translateX(-400%); }
-    90% { transform: translateX(-400%); }
- 
-    95% { transform: translateX(-500%); }
-    100% { transform: translateX(-500%); }
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    15% {
+        transform: translateX(-100%);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    35% {
+        transform: translateX(-200%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    55% {
+        transform: translateX(-300%);
+    }
+    70% {
+        transform: translateX(-300%);
+    }
+    75% {
+        transform: translateX(-400%);
+    }
+    90% {
+        transform: translateX(-400%);
+    }
+    95% {
+        transform: translateX(-500%);
+    }
+    100% {
+        transform: translateX(-500%);
+    }
 }
- 
-* { box-sizing: border-box; }
- 
-html { scroll-behavior: smooth; }
- 
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: sans-serif;
 }
- 
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
- 
+
 .slider {
     position: relative;
 }
- 
+
 .slides {
     position: relative;
     display: flex;
     overflow: hidden;
 }
- 
+
 .slide {
     width: 100vw;
     flex-shrink: 0;
@@ -70,31 +97,31 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
- 
+
 .slides:hover .slide {
     animation-play-state: paused;
 }
- 
+
 .slide img {
     width: 100%;
     vertical-align: top;
 }
- 
+
 .slide a {
     width: 100%;
     display: inline-block;
     position: relative;
 }
- 
+
 .caption {
     color: white;
     text-shadow: 1px 1px black;
     font-size: 8vw;
     position: absolute;
     bottom: 8vw;
-    right: 4vw;                                 
+    right: 4vw;
 }
- 
+
 .slide:target {
     animation-name: none;
     position: absolute;
@@ -104,41 +131,40 @@ body {
     bottom: 0;
     z-index: 50;
 }
- 
-.slider-controler {         
+
+.slider-controler {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     text-align: center;
     padding: 5px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
 }
- 
+
 .slider-controler li {
     margin: 0 0.5rem;
     display: inline-block;
     vertical-align: top;
 }
- 
+
 .slider-controler a {
     display: inline-block;
-    vertical-align: top;            
+    vertical-align: top;
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
 }
- 
+
 @media only screen and (min-width: 1200px) {
     .slide {
         width: 1200px;
     }
- 
     .caption {
         font-size: 96px;
         bottom: 96px;
-        right: 50px; 
+        right: 50px;
     }
 }
 
@@ -147,6 +173,7 @@ body {
     width: 90%;
     margin: auto;
 }
+
 
 /* --- --- CONTENEDOR PRINCIPAL --- --- */
 
@@ -178,7 +205,9 @@ body {
     color: #CFCFCF;
 }
 
+
 /* --- --- CAROUSEL --- --- */
+
 .carousel__contenedor {
     position: relative;
 }
@@ -249,12 +278,10 @@ body {
     body {
         padding: 40px 0;
     }
-
     .contenido-principal {
         flex-direction: column;
     }
-
-    .contenido-principal > * {
+    .contenido-principal>* {
         width: 100%;
     }
 }
@@ -267,57 +294,105 @@ body {
     -o-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
 }
- 
+
 .transition {
-    -webkit-transform: scale(1.8); 
+    -webkit-transform: scale(1.8);
     -moz-transform: scale(1.8);
     -o-transform: scale(1.8);
     transform: scale(1.8);
 }
 
-nav{
-    position: absolute;
-    width: 250px;
-    height: 112%;
-    border:1px solid #000;
-    color: #fff;
-}
-ul{
+ul {
     margin-top: 150px;
     list-style: none;
     display: block;
-    border:none;
+    border: none;
 }
-li{
+
+li {
     width: 100%;
     height: 50px;
     border-bottom: 1px solid #323232;
     overflow: hidden;
-    border:none;
+    border: none;
 }
-p.menu{
+
+p.menu {
     position: relative;
     padding: 16px;
     padding-right: 25px;
     opacity: 0.9;
-    border:none;
+    border: none;
     -webkit-transition: opacity 0.2s;
 }
-div.barra{
+
+div.barra {
     position: absolute;
     height: 50px;
     width: 0px;
     background-color: #aaa;
     opacity: 0.7;
     -webkit-transition: width .2s;
-    border:none;
-
+    border: none;
 }
-.text{
+
+.text {
     text-transform: uppercase;
     font-size: x-large;
     cursor: pointer;
 }
-.menus{
+
+.menus {
     display: none;
+}
+
+.headerLayout {
+    top: -153px;
+    left: 0px;
+    background: transparent url('/assets/splashBanner_pokemon.jpg') 0% 40% repeat-x padding-box;
+    opacity: 1;
+}
+
+.searchbtn {
+    height: 21px;
+    width: 21px;
+}
+
+.rectangleLogin {
+    top: 39px;
+    width: 313px;
+    height: 38px;
+    left: 50%;
+    background: #7EB78F 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 39px;
+    opacity: 1;
+    margin: 5% 0 0% 80%
+}
+
+.loginbtn {
+    top: 50%;
+    left: 100%;
+    width: 30px;
+    height: 30px;
+    margin: 1% 0 0 15%
+}
+
+.logintext {
+    top: 35px;
+    left: 1808px;
+    width: 86px;
+    height: 40px;
+    text-align: left;
+    font: normal normal bold 30px/14px Segoe UI;
+    letter-spacing: 1.74px;
+    color: #000000;
+    text-shadow: 4px -3px 4px #84CBCF63;
+    opacity: 1;
+    margin: 2.5% 0 0 0%
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
 }
