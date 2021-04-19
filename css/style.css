@@ -502,3 +502,9 @@ input[type=password] {
 .buttonLogin:hover {
     opacity: 0.8;
 }
+
+.pokebolaIcon: {
+	margin: 10px;
+	position: relative;
+	bottom: 50px;
+}
