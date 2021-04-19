@@ -504,7 +504,6 @@ input[type=password] {
 }
 
 .pokebolaIcon: {
-	margin: 10px;
-	position: relative;
-	bottom: 50px;
+	top: 251px;
+    left: 768px;
 }
