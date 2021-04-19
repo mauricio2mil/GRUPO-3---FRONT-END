@@ -396,3 +396,109 @@ div.barra {
     width: 100%;
     height: 100%;
 }
+
+.loginLogos {
+    width: 80px;
+    height: 8 0px;
+}
+
+.facebookLogo {
+    top: 251px;
+    left: 768px;
+    opacity: 1;
+}
+
+.googleLogo {
+    top: 251px;
+    left: 915px;
+    opacity: 1;
+}
+
+.twitterLogo {
+    top: 251px;
+    left: 1057px;
+    opacity: 1;
+}
+
+footer {
+    display: block;
+    padding: 3px;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.modalRadius {
+    border: 1px solid #707070;
+    border-radius: 104px;
+}
+
+.modalLogin {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content-login {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: #DFDBDB 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+.buttonLogin {
+    background-color: #C6D2B9;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid #707070;
+    border-radius: 20px;
+    font: normal normal bold 25px/14px Verdana;
+    letter-spacing: 0.57px;
+    color: #00000085;
+}
+
+.buttonLogin:hover {
+    opacity: 0.8;
+}

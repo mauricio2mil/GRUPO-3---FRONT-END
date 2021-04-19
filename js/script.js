@@ -44,6 +44,8 @@ window.addEventListener('load', function() {
 });
 
 $(document).ready(function() {
+    $('#closesession').hide();
+    $('#welcome').hide();
     $('.zoom').hover(function() {
         $(this).addClass('transition');
     }, function() {
@@ -52,4 +54,39 @@ $(document).ready(function() {
     $('.text').on('click', function() {
         $('.menus').toggle();
     });
+});
+
+$(document).on('click', '.js-login', function() {
+    $('#myModal').modal();
+});
+
+$(document).on('click', '.js-btnlogin', function() {
+    debugger
+    var nom = document.getElementsByName("uname")[0].value;
+    var pass = document.getElementsByName("psw")[0].value;
+
+    if ((nom != undefined || nom != "") && (pass != undefined || pass != "")) {
+        /*Guardando los datos en el LocalStorage*/
+        localStorage.setItem(nom, pass);
+
+        $('.js-login').hide();
+        $('#myModal').modal('toggle');
+        $('#user')[0].innerText = nom;
+        $('#closesession').show();
+        $('#welcome').show();
+
+    } else {
+        $.alert("User or Password Invalid")
+    }
+
+});
+
+$(document).on('click', '#closesession', function() {
+    var user = $('#user')[0].innerText;
+    localStorage.removeItem(user);
+
+    $('.js-login').show();
+    $('#user')[0].innerText = "";
+    $('#closesession').hide();
+    $('#welcome').hide();
 });
